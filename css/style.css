@@ -1,0 +1,97 @@
+/* Couleurs du site */
+/*
+White: #ffffff
+Dark opacity 30% : rgba(0, 0, 0, 0.3)
+Gray opacity 50% : rgba(233, 233, 233, 0.5)
+Blue : #0E143C
+Blue light : #179de9
+Blue dark : #00507c
+Pink light : #F1C6D7
+Red opacity 50% : rgba(255, 0, 0, 0.5)
+*/
+
+:root {
+    --white: #ffffff;
+    --darkOpacity30: rgba(0, 0, 0, 0.3);
+    --grayOpacity50: rgba(233, 233, 233, 0.5);
+    --blue: #0E143C;
+    --lightBlue: #179de9;
+    --darkBlue: #00507c;
+    --lightPink: #F1C6D7;
+    --redOpacity50: rgba(255, 0, 0, 0.5);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Playfair+Display&display=swap');
+
+body {
+ /*   background-color: var(--lightPink); */
+    background: linear-gradient(to right, var(--darkBlue), var(--lightPink));
+ /*   background: linear-gradient(to left, Blue, Pink); */
+    
+}
+
+header img {
+    width: 10%;
+}
+
+header {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 60%;
+ /*   padding: 20px 0 20px 0; */
+    margin:auto;
+}
+
+
+
+header nav ul {
+    display:flex;
+    flex-direction: row;
+    list-style: none; /* on supprime les puces */
+    gap: 10px; /* met un espace entre les éléments du menu nav */
+}
+
+/* applique un style sur les liens de nav */
+header nav ul li a {
+    text-decoration: none; /* supprime le soulignement */
+    color:  var(--white);
+/*    transition: color 500ms; */
+}
+
+main {
+    width: 60%;
+    margin:auto;
+}
+
+section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 60%;
+    margin: auto;
+}
+
+footer img {
+    width: 5%; 
+}
+
+footer div ul {
+    display:flex;
+    flex-direction: row;
+    list-style: none; /* on supprime les puces */
+    gap: 10px; /* met un espace entre les éléments du menu nav */
+}
+
+/* applique un style sur les liens de nav */
+footer div ul li a {
+    text-decoration: none; /* supprime le soulignement */
+    color:  var(--white);
+/*    transition: color 500ms; */
+}
